@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>С 8 Марта, ЮЛЯ!</title>
+    <style>
+      body {
+        background: url("https://source.unsplash.com/1600x900/?flowers")
+          no-repeat center center fixed;
+        background-size: cover;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        color: white;
+      }
+      .container {
+        margin-top: 20%;
+      }
+      h1 {
+        font-size: 3em;
+        animation: fadeIn 3s ease-in-out;
+      }
+      p {
+        font-size: 1.5em;
+        animation: fadeIn 5s ease-in-out;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 1.5em;
+        color: white;
+        background: rgba(255, 20, 147, 0.8);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: fadeIn 7s ease-in-out;
+      }
+      .btn:hover {
+        background: rgba(255, 105, 180, 1);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: brown">🌸 С 8 марта Юля 🌸</h1>
+      <p>🌷 💖 🌷 💖 🌷 💖 🌷</p>
+      <p>🌷 💖 🌷 💖 🌷 💖 🌷</p>
+
+      <button class="btn" onclick="showSurprise()">Нажми сюда 🎁</button>
+    </div>
+
+    <audio
+      id="music"
+      src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"
+      loop
+    ></audio>
+
+    <script>
+      function showSurprise() {
+        alert("💐Юля с 8 марта не грусти все будет хорошо  💖");
+        document.getElementById("music").play();
+      }
+    </script>
+  </body>
+</html>
